@@ -72,11 +72,11 @@ export function EditCase() {
     const autocompleteRef = useRef<any>(null);
     const [error, setError] = useState(false)
     const [reset, setReset] = useState(false)
-    const [selectedContacts, setSelectedContacts] = useState<any[]>([]);
-    const [selectedAssignTo, setSelectedAssignTo] = useState<any[]>([]);
-    const [selectedTags, setSelectedTags] = useState<any[]>([]);
-    const [selectedTeams, setSelectedTeams] = useState<any[]>([]);
-    const [selectedCountry, setSelectedCountry] = useState<any[]>([]);
+    const [selectedContacts, setSelectedContacts] = useState<any>([]);
+    const [selectedAssignTo, setSelectedAssignTo] = useState<any>([]);
+    const [selectedTags, setSelectedTags] = useState<any>([]);
+    const [selectedTeams, setSelectedTeams] = useState<any>([]);
+    const [selectedCountry, setSelectedCountry] = useState<any>([]);
     const [leadSelectOpen, setLeadSelectOpen] = useState(false)
     const [statusSelectOpen, setStatusSelectOpen] = useState(false)
     const [countrySelectOpen, setCountrySelectOpen] = useState(false)
@@ -302,7 +302,7 @@ export function EditCase() {
                                                         limitTags={2}
                                                         // options={state.contacts || []}
                                                         // getOptionLabel={(option: any) => state.contacts ? option?.first_name : option}
-                                                        options={state?.contacts?.length ? state?.contacts.filter((option: any) => !selectedContacts.some((selectedOption) => selectedOption.id === option.id)) : []}
+                                                        options={state?.contacts?.length ? state?.contacts.filter((option: any) => !selectedContacts.some((selectedOption:any) => selectedOption.id === option.id)) : []}
                                                         getOptionLabel={(option: any) => state?.contacts?.length ? option?.first_name : option}
                                                         onChange={(e: any, value: any) => handleChange2('contacts', value)}
                                                         size='small'

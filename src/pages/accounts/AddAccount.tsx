@@ -79,11 +79,11 @@ export function AddAccount() {
     const { state } = useLocation()
     const autocompleteRef = useRef<any>(null);
     const [error, setError] = useState(false)
-    const [selectedContacts, setSelectedContacts] = useState<any[]>([]);
-    const [selectedAssignTo, setSelectedAssignTo] = useState<any[]>([]);
-    const [selectedTags, setSelectedTags] = useState<any[]>([]);
-    const [selectedTeams, setSelectedTeams] = useState<any[]>([]);
-    const [selectedCountry, setSelectedCountry] = useState<any[]>([]);
+    const [selectedContacts, setSelectedContacts] = useState([]);
+    const [selectedAssignTo, setSelectedAssignTo] = useState([]);
+    const [selectedTags, setSelectedTags] = useState([]);
+    const [selectedTeams, setSelectedTeams] = useState([]);
+    const [selectedCountry, setSelectedCountry] = useState([]);
     const [leadSelectOpen, setLeadSelectOpen] = useState(false)
     const [statusSelectOpen, setStatusSelectOpen] = useState(false)
     const [countrySelectOpen, setCountrySelectOpen] = useState(false)

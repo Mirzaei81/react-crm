@@ -67,11 +67,11 @@ export function AddCase() {
 
     const autocompleteRef = useRef<any>(null);
     const [error, setError] = useState(false)
-    const [selectedContacts, setSelectedContacts] = useState<any[]>([]);
-    const [selectedAssignTo, setSelectedAssignTo] = useState<any[]>([]);
-    const [selectedTags, setSelectedTags] = useState<any[]>([]);
-    const [selectedTeams, setSelectedTeams] = useState<any[]>([]);
-    const [selectedCountry, setSelectedCountry] = useState<any[]>([]);
+    const [selectedContacts, setSelectedContacts] = useState<any>([]);
+    const [selectedAssignTo, setSelectedAssignTo] = useState<any>([]);
+    const [selectedTags, setSelectedTags] = useState<any>([]);
+    const [selectedTeams, setSelectedTeams] = useState<any>([]);
+    const [selectedCountry, setSelectedCountry] = useState<any>([]);
     const [caseTypeSelectOpen, setCaseTypeSelectOpen] = useState(false)
     const [statusSelectOpen, setStatusSelectOpen] = useState(false)
     const [accountSelectOpen, setAccountSelectOpen] = useState(false)

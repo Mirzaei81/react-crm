@@ -137,10 +137,10 @@ export function AddLeads() {
 
   const autocompleteRef = useRef<any>(null);
   const [error, setError] = useState(false)
-  const [selectedContacts, setSelectedContacts] = useState<any[]>([]);
-  const [selectedAssignTo, setSelectedAssignTo] = useState<any[]>([]);
-  const [selectedTags, setSelectedTags] = useState<any[]>([]);
-  const [selectedCountry, setSelectedCountry] = useState<any[]>([]);
+  const [selectedContacts, setSelectedContacts] = useState<any>([]);
+  const [selectedAssignTo, setSelectedAssignTo] = useState<any>([]);
+  const [selectedTags, setSelectedTags] = useState<any>([]);
+  const [selectedCountry, setSelectedCountry] = useState<any>([]);
   const [sourceSelectOpen, setSourceSelectOpen] = useState(false)
   const [statusSelectOpen, setStatusSelectOpen] = useState(false)
   const [countrySelectOpen, setCountrySelectOpen] = useState(false)
